@@ -34,7 +34,7 @@ from serial.serialutil import SerialException
 app_eui = environ.get('APP_EUI')
 app_key = environ.get('APP_KEY')
 # LoRaWan band
-band = environ.get('BAND', 'EU868')
+band = environ.get('BAND', 'US915')
 
 # Serial port may change depending on the RPi and its configuration:
 #   - mini UART: /dev/ttyS0
