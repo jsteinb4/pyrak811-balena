@@ -25,7 +25,7 @@ from struct import pack
 from sys import exit
 from time import sleep
 
-from rak811 import Mode, Rak811
+from rak811.rak811 import Mode, Rak811
 
 from serial.serialutil import SerialException
 
