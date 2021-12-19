@@ -41,7 +41,7 @@ band = environ.get('BAND', 'US915')
 #   - PL011: /dev/ttyAMA0
 # The rak811 library uses by default /dev/serial0 symlink which is not present
 # in the balena container
-port = environ.get('SERIAL_PORT', '/dev/ttyS0')
+port = environ.get('SERIAL_PORT', '/dev/ttyAMA0')
 # The /sys path exposing CPU temperature:
 path_cpu_temp = environ.get('PATH_CPU_TEMP',
                             '/sys/class/thermal/thermal_zone0/temp')
