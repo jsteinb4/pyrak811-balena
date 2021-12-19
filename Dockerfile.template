@@ -1,5 +1,5 @@
 # Start from a balena python3 image; build version is needed for RPi.GPIO
-FROM balenalib/raspberrypi4-64-python
+FROM balenalib/raspberrypi4-64-debian-python
 
 RUN pip install rak811
 
