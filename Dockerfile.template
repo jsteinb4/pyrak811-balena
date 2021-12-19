@@ -1,10 +1,6 @@
 # Start from a balena python3 image; build version is needed for RPi.GPIO
-FROM balenalib/raspberrypi4-64-debian-python
+FROM balenalib/raspberry-pi-python:3-buster
 
-RUN pip install rpi-gpio
-RUN pip install setuptools
-RUN pip install pyserial
-RUN pip install click
 RUN pip install rak811
 
 COPY pyrak811-balena.py /opt/rak811/
